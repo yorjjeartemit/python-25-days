@@ -1,7 +1,7 @@
 import pygame
 import random
 pygame.init()
-size_display=(480, 560)
+size_display=(480, 480)
 display=pygame.display.set_mode(size_display, pygame.RESIZABLE)
 pygame.display.set_caption("snake")
 clock=pygame.time.Clock()
@@ -58,4 +58,5 @@ while run:
         pygame.draw.rect(display,(255,0,0),(i[0]*size1,i[1]*size1,size1,size1))
     pygame.display.flip()
     clock.tick(fps)
+
 pygame.quit()
